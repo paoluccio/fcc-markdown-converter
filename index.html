@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Markdown Previewer</title>
+</head>
+
+<body>
+  <div class="editor">
+    <div class="editor__topline">
+      <div class="coded-by">Coded by <a href="https://www.freecodecamp.org/fcc5b94da85-6e92-4331-8fbb-c5c610c6a41a"
+          target="_blank">Pavel P.</a> for freeCodeCamp</div>
+      <label for="editor" class="editor__title">Editor</label>
+      <input id="btn" type="button" value="Clear">
+    </div>
+    <textarea id="editor" class="editor__area"></textarea>
+  </div>
+  <div class="preview">
+    <p class="preview__title">Preview</p>
+    <div id="preview" class="preview__area"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.4.0/marked.min.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

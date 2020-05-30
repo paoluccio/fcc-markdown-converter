@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+code, pre {
+  background-color: #d9d7d7;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.editor, .preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.editor {
+  width: 38vw;
+}
+
+.preview {
+  width: 58vw;
+}
+
+.editor__topline {
+  margin: 5px 0;
+  width: 100%;
+}
+
+.coded-by {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  font-size: 14px;
+  color: #8c8c8c;
+  margin: 0 15px 0 25px;
+  display: inline-block;
+}
+.coded-by a {
+  color: #8c8c8c;
+}
+
+.editor__title, .preview__title {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 7px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
+  line-height: 1.8rem;
+}
+
+input[type='button'] {
+  margin-left: 50px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+}
+
+.editor__area, .preview__area {
+  height: 92vh;
+  width: 95%;
+  padding: 5px;
+  background-color: #d3cf6b;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #fffee1;
+}
+
+.editor__area {
+  font-family: 'IBM Plex Mono', monospace;
+  outline: none;
+  font-size: 14px;
+  margin: 0 10px 0 18px;
+}
+
+.preview__area {
+  font-family: 'Merriweather', serif;
+  overflow: scroll;
+  border: 1px solid rgb(169, 169, 169);
+  margin: 0 18px 0 10px;
+}
+
+@media (max-width: 992px) {
+  .editor, .preview {
+    width: 100%;
+  }
+
+  .editor__area, .preview__area {
+    margin: 0;
+    width: 93%;
+  }
+
+  .editor__area {
+    height: 30vh;
+  }
+
+  .preview__area {
+    height: 54vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .editor__topline {
+    width: auto;
+  }
+  
+  .coded-by {
+    display: none;
+  }
+}
